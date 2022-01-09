@@ -1,0 +1,111 @@
+@import "../../global.scss";
+
+.works {
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .arrow {
+        height: 50px;
+        position: absolute;
+        color: white;
+        cursor: pointer;
+        font-size: 60px;
+
+        &.left {
+            left: 100px;
+
+
+        }
+        &.right{
+            right: 100px;
+        }
+    }
+
+
+
+    .slider {
+        display: flex;
+        height: 350px;
+        left: 0;
+        position: absolute;
+        transition: all 1s ease-in;
+
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                width: 700px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 20px;
+
+                .left {
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        
+
+                        .imgContainer {
+                            width: 40px;
+                            height: 40px;
+                            background-color: rgb(245, 156, 124);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img{
+                                width: 25px;    
+                            }
+
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 600;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .right {
+                    flex: 8;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    img{
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
+}
